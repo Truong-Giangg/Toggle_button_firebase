@@ -1,0 +1,46 @@
+body{
+    background: #031321;
+}
+.wrapper{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.progress{
+    margin: 30px auto;
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.toggle-btn{
+    width: 80px;
+    height: 40px;
+    background: gray;
+    border-radius: 30px;
+    padding: 5px;
+    transition: all 300ms ease-in-out;
+}
+.toggle-btn > .inner-circle{
+    width: 40px;
+    height: 40px;
+    background: white;
+    border-radius: 50%;
+    transition: all 300ms ease-in-out;
+}
+.toggle-btn.active{
+    background: #21ecf3;
+    box-shadow: 0 0 10px #21ecf3, 0 0 40px #21ecf3, 0 0 80px #21ecf3;
+    transition-delay:0.5s;
+}
+.toggle-btn.active> .inner-circle{
+    margin-left: 40px;
+}
+.icon1{	
+	color: #fff;
+	margin: 10px auto;
+}
